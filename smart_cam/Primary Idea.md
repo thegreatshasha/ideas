@@ -13,7 +13,12 @@ Raise threat levels through a combination of user's threat level
 * Notifier: Notify people of the threat along with the assesment level. Support for sms, email, in app notifications.
 
 ## Applications
+* Sift through terabytes of video footage for forensics
+* Detecting violence amidst gangs etc, fights etc
+* Detect is someone abandons a package
+* Recognizing theft and illicit object handoffs
 * Baby monitor
+* Perimeter control/fence climbing/line crossing can be a simple application to automate
 * Pet monitor
 * Activity threat coupled with Actor history allows you to predict criminal 
 * Detect key events like fighting, fire, tresspassing,  
@@ -22,16 +27,21 @@ Raise threat levels through a combination of user's threat level
 * Bank threat assesment.
 * Monitor elderly people and kids in nursing homes. Threat if they fall down etc.
 * Road safety: Detect collisions, traffic accidents on the streets and send emergency alert to hospitals.
-* Detect 
+* Warehouse surveillance
+* Identify license plate number of parking violations 
+* Theft seems to be a big problem in retail chains
 
 ## ThinkList
+* Store only interesting events to save space
+* Train the neural nets differently based on different applications, police, airport etc
+* See hardware involved
 * Write this like a research paper.
 * How can we apply this to services like periscope, meerkat? Can this help in indexing the videos somehow?
 
 * Have to compare with existing approaches.
 * Find out which companies use cctv control rooms. Should be a good application.
 * Add a unique identifier for each object detected like man#34591, dog#91231  https://www.youtube.com/watch?v=aG7V7_zowZU
-
+* What algorithms does the smart cctv use?
 * If the identity mapper can further map identities
 * Discuss this idea with profs etc.
 * Does our actor recognizer work even in the night with infrared cameras?
@@ -50,14 +60,21 @@ Raise threat levels through a combination of user's threat level
 * Read up on live video architecture
 
 ## Competitor and what are you better at
+* Scada for behvaiour analysis http://www.brslabs.com/product/scada/
 * Smart cctv https://smartcctvfrs.wordpress.com/2015/03/06/your-face-becomes-a-barcode-algorithmic-surveillance/
+* http://briefcam.com/ for video synopsis (only store events of interest)
 * https://nest.com/camera/meet-nest-cam/
 * https://www.youtube.com/watch?v=aG7V7_zowZU
-* 
 
 ## Prototype Iterations
 * v1: Just the cloud based camera
 * v2: Activity detection for baby monitor, elderly monitor
 
 ## References
-https://www.facebook.com/Engineering/videos/10153621574817200/
+* https://www.facebook.com/Engineering/videos/10153621574817200/
+* https://gcn.com/articles/2013/04/18/how-video-analytics-reconstruct-boston-marathon-bombings.aspx
+
+## Interesting Reports
+* Usful and big report by canadian government, read http://cradpdf.drdc-rddc.gc.ca/PDFS/unc167/p801081_A1b.pdf
+* https://www.accenture.com/t20150523T055755__w__/us-en/_acnmedia/Accenture/Conversion-Assets/DotCom/Documents/Global/PDF/Technology_2/Accenture-Video-Analytics-Operational-Marketing-and-Security-Insights-from-CCTV.pdf
+* https://gcn.com/articles/2013/04/18/how-video-analytics-reconstruct-boston-marathon-bombings.aspx
