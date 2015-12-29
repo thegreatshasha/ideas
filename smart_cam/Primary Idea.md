@@ -30,8 +30,11 @@ Raise threat levels through a combination of user's threat level
 * Warehouse surveillance
 * Identify license plate number of parking violations 
 * Theft seems to be a big problem in retail chains
+* ATM tampering
 
 ## ThinkList
+* Start seeing random cctv footages
+* Google facenet for identity recognition in videos?
 * Store only interesting events to save space
 * Train the neural nets differently based on different applications, police, airport etc
 * See hardware involved
@@ -41,7 +44,7 @@ Raise threat levels through a combination of user's threat level
 * Have to compare with existing approaches.
 * Find out which companies use cctv control rooms. Should be a good application.
 * Add a unique identifier for each object detected like man#34591, dog#91231  https://www.youtube.com/watch?v=aG7V7_zowZU
-* What algorithms does the smart cctv use?
+* What algorithms does the smart cctv use? Our system should at least be as good as theirs
 * If the identity mapper can further map identities
 * Discuss this idea with profs etc.
 * Does our actor recognizer work even in the night with infrared cameras?
@@ -51,6 +54,8 @@ Raise threat levels through a combination of user's threat level
 * Can we use raspberry pi gpu in order to 
 
 ## Potential Issues
+* Detecting activity in aerial/overhead cameras might be an issue since the dataset is trained on u2b
+* Cost of hardware and how many frames can it process?
 * How easy is the criminal database to find? Might be tougher in a country like India. How frequently is it updated?
 * Will the intelligence layer be on the cloud or each individual webcam.
 * Architecture of the neural nets. Do we need 3 of the time. How much time does it take for a feedforward pass?
@@ -66,11 +71,19 @@ Raise threat levels through a combination of user's threat level
 * https://nest.com/camera/meet-nest-cam/
 * https://www.youtube.com/watch?v=aG7V7_zowZU
 
+# Surveillance Dataset
+* Senior activity dataset. Evaluate youtube using this
+* Some more datasets https://www.cs.utexas.edu/~chaoyeh/web_action_data/dataset_list.html
+* Violent scenes dataset
+
 ## Prototype Iterations
 * v1: Just the cloud based camera
 * v2: Activity detection for baby monitor, elderly monitor
 
 ## References
+* UAV based suspicious activity monitoring http://www.asp.eurasipjournals.com/content/pdf/1687-6180-2013-176.pdf
+* Aerial pose estimation https://ddd.uab.cat/pub/elcvia/elcvia_a2014v13n1/elcvia_a2014v13n1p18.pdf
+* Detecting activity in aerial/overhead cameras might be an issue since the dataset is trained on u2b
 * https://www.facebook.com/Engineering/videos/10153621574817200/
 * https://gcn.com/articles/2013/04/18/how-video-analytics-reconstruct-boston-marathon-bombings.aspx
 
@@ -78,3 +91,4 @@ Raise threat levels through a combination of user's threat level
 * Usful and big report by canadian government, read http://cradpdf.drdc-rddc.gc.ca/PDFS/unc167/p801081_A1b.pdf
 * https://www.accenture.com/t20150523T055755__w__/us-en/_acnmedia/Accenture/Conversion-Assets/DotCom/Documents/Global/PDF/Technology_2/Accenture-Video-Analytics-Operational-Marketing-and-Security-Insights-from-CCTV.pdf
 * https://gcn.com/articles/2013/04/18/how-video-analytics-reconstruct-boston-marathon-bombings.aspx
+* Boston analytics whitepaper http://www.bostonanalytics.com/images/Introduction_Video%20Surveillance%20Whitepaper_2014.pdf
